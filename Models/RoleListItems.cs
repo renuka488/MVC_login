@@ -8,7 +8,7 @@ namespace MVC_login.Models
 {
     public class RoleListItems
     {
-        public string teststr = ""; 
+       
         public IList<string> SelectedRole { get; set; }
         public IList<SelectListItem> AvailableRole { get; set; }
 
