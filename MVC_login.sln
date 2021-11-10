@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_login", "MVC_login.csproj", "{0CD538EC-6BB6-40D2-9EE9-13EA6E6D6FDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAS", "..\DAS\DAS.csproj", "{AD3E2DFE-8F77-4902-9EC6-14773E132A01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CD538EC-6BB6-40D2-9EE9-13EA6E6D6FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD538EC-6BB6-40D2-9EE9-13EA6E6D6FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD538EC-6BB6-40D2-9EE9-13EA6E6D6FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD538EC-6BB6-40D2-9EE9-13EA6E6D6FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3E2DFE-8F77-4902-9EC6-14773E132A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3E2DFE-8F77-4902-9EC6-14773E132A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3E2DFE-8F77-4902-9EC6-14773E132A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3E2DFE-8F77-4902-9EC6-14773E132A01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF7D04B4-46BF-4BDF-AC3E-F42FD9C942DE}
+	EndGlobalSection
+EndGlobal

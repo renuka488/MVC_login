@@ -1,0 +1,52 @@
+﻿@model MVC_login.Models.myloginEntity
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ULRegistration</title>
+</head>
+<body>
+    
+        @using (Html.BeginForm())
+        {
+            <div>
+                UserID:
+                <br />
+                @Html.TextBoxFor(m => m.UserID)
+                <br /><br />
+                Password:
+                <br />
+                @Html.TextBoxFor(m => m.Password)
+                <br /><br />
+                Name:
+                <br />
+                @Html.TextBoxFor(m => m.Name)
+                <br /><br />
+                MobileNumber:
+                <br />
+                @Html.TextBoxFor(m => m.MobileNumber)
+                <br /><br />
+                EmailAddress:
+                <br />
+                @Html.TextBoxFor(m => m.EmailAddress)
+                <br /><br />
+                EmployeeID:
+                <br />
+                @Html.TextBoxFor(m => m.EmployeeID)
+                <br /><br />
+                Role:
+                <br />
+                @Html.TextBoxFor(m => m.Role)
+                <br />
+                <input type="submit" value="Submit" name="button" />
+                
+            </div>
+        }
+</body>
+</html>

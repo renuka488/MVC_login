@@ -1,0 +1,74 @@
+﻿@model MVC_login.Models.myloginEntity
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+    <div>
+        UserID:
+        <br />
+        @Html.TextBoxFor(m => m.UserID)
+        <br /><br />
+        Password:
+        <br />
+        @Html.TextBoxFor(m => m.Password)
+        <br /><br />
+        Name:
+        <br />
+        @Html.TextBoxFor(m => m.Name)
+        <br /><br />
+        MobileNumber:
+        <br />
+        @Html.TextBoxFor(m => m.MobileNumber)
+        <br /><br />
+        EmailAddress:
+        <br />
+        @Html.TextBoxFor(m => m.EmailAddress)
+        <br /><br />
+        EmployeeID:
+        <br />
+        @Html.TextBoxFor(m => m.EmployeeID)
+        <br /><br />
+        Role:
+        <br />
+        @Html.TextBoxFor(m => m.Role)
+        <br />
+        @Html.TextBoxFor(m => m.Role)
+        @Html.DropDownList("DropDown", new List<SelectListItem>
+
+{
+        new SelectListItem{ Text="...", Value = "0" },
+        new SelectListItem{ Text="Admin", Value = "1" },
+        new SelectListItem{ Text="SME", Value = "2" },
+        new SelectListItem{ Text="Candidate", Value = "3" },
+        new SelectListItem{ Text="Reviewer", Value = "4" },
+        new SelectListItem{ Text="Assessment Incharge", Value = "5" }
+})
+        <input data_value="true"
+               id="IsActive"
+               name="IsActive"
+               type="checkbox"
+               value="true" />
+        <input name="IsActive" type="hidden" value="false" />
+        <input type="submit" value="Submit" name="button" />
+
+        <input type="submit" value="Submit" name="button" />
+
+
+
+
+
+    </div>
+    }
+</body>
+</html>

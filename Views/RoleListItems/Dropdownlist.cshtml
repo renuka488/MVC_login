@@ -1,0 +1,35 @@
+﻿@model MVC_login.Models.RoleListItems
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Dropdownlist</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.TextBoxFor(m => m.Role)
+            @Html.DropDownList("DropDown", new List<SelectListItem>
+
+{
+            new SelectListItem{ Text="...", Value = "0" },
+            new SelectListItem{ Text="Admin", Value = "1" },
+            new SelectListItem{ Text="SME", Value = "2" },
+            new SelectListItem{ Text="Candidate", Value = "3" },
+            new SelectListItem{ Text="Reviewer", Value = "4" },
+            new SelectListItem{ Text="Assessment Incharge", Value = "5" }
+})
+            <div class="form-group text-center">
+                <input type="submit" class="btn btn-primary" value="Submit" />
+            </div>
+        }
+    </div>
+</body>
+</html>
