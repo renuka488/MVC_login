@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+  
 namespace MVC_login.Models
 {
     public class myloginEntity
     {
+        public string UserID123 { get; set; }
         public string UserID { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
